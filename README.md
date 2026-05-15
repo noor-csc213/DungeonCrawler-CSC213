@@ -17,12 +17,16 @@ DungeonCrawler.cpp
   - Inheritance   : DungeonCrawler class inherits from the Game
                     base class and overrides the pure virtual
                     function play().
+    
   - Polymorphism  : In main(), a Game* base pointer is used to
                     call DungeonCrawler::play() at runtime.
+    
   - Composition   : Room and Player classes are composed inside
                     DungeonCrawler, demonstrating has-a relation.
+    
   - Encapsulation : All data members are private. Public methods
                     provide controlled access.
+    
   - File I/O      : Leaderboard class reads and writes scores
                     to dungeon_scores.txt using fstream.
 
@@ -44,36 +48,56 @@ THE STORY
  OBJECTIVE
   -----------
   > Start at [S] in the top-left corner.
+
   > Navigate the 6 x 6 dungeon grid room by room.
+
   > Collect gold from Treasure rooms [$].
+
   > Avoid Trap rooms [X]  they drain your HP badly.
+
   > Reach EXIT [E] at the bottom-right corner to WIN.
 
 HOW TO PLAY
 -----------
   W = Move North (Up)
+  
   S = Move South (Down)
+  
   A = Move West  (Left)
+  
   D = Move East  (Right)
+  
   L = View Leaderboard
+  
   Q = Quit and save score
+  
 
   MAP LEGEND
   ------------
-  [@]   your current position
-  [?]  Unknown room, enter to reveal it
-  [S]  Starting room
+  [@]   your current position.
+  
+  [?]  Unknown room, enter to reveal it.
+  
+  [S]  Starting room.
+  
   [E]  EXIT, reach this to WIN! Always bottom-right.
-  [$]  Treasure room, collect gold coins
-  [X]  Trap room, lose HP on entry
-  [ ]  Empty room, safe
+  
+  [$]  Treasure room, collect gold coins.
+  
+  [X]  Trap room, lose HP on entry.
+  
+  [ ]  Empty room, safe.
  
 TIPS
   ------
   > All rooms are hidden until you physically step inside.
+
   > The EXIT is always at the very last row and column.
+
   > Collect as much gold as possible before reaching the exit.
+
   > Red HP bar means danger, one more trap could kill you!
+
   > Press [L] any time to view the leaderboard.
 
 
