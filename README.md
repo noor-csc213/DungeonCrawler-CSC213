@@ -1,8 +1,13 @@
 ================================================================
+ 
   DUNGEON CRAWLER — OOP Final Project
+  
   Course    : object oriented progaming
+  
   Instructor: Huda Sarfraz
+  
   Student   : [Noor fatima(0712)]
+  
 ================================================================
 
 PURPOSE OF FILES
