@@ -1,6 +1,6 @@
 ================================================================
   DUNGEON CRAWLER — OOP Final Project
-  Course    : CSC-213
+  Course    : object oriented progaming
   Instructor: Huda Sarfraz
   Student   : [Noor fatima(0712)]
 ================================================================
@@ -35,6 +35,20 @@ HOW TO COMPILE AND RUN
     ./DungeonCrawler        (Linux/Mac)
     DungeonCrawler.exe      (Windows)
 
+THE STORY
+  -----------
+  You are a hero trapped inside a deadly dungeon.
+  Treasure glitters in hidden rooms, but deadly traps lurk at every turn.
+  Your only goal: reach the EXIT and escape with your life!
+
+ OBJECTIVE
+  -----------
+  > Start at [S] in the top-left corner.
+  > Navigate the 6 x 6 dungeon grid room by room.
+  > Collect gold from Treasure rooms [$].
+  > Avoid Trap rooms [X]  they drain your HP badly.
+  > Reach EXIT [E] at the bottom-right corner to WIN.
+
 HOW TO PLAY
 -----------
   W = Move North (Up)
@@ -44,12 +58,23 @@ HOW TO PLAY
   L = View Leaderboard
   Q = Quit and save score
 
-  Goal: Start at [S], navigate the 6x6 dungeon grid,
-        collect gold from [$] rooms, avoid [X] trap rooms,
-        and reach the EXIT [E] at the bottom-right corner.
-
-  Scoring:
-    Score = (gold x10) + (HP x2) - (traps x20) + (1000/steps)
+  MAP LEGEND
+  ------------
+  [@]   your current position
+  [?]  Unknown room, enter to reveal it
+  [S]  Starting room
+  [E]  EXIT, reach this to WIN! Always bottom-right.
+  [$]  Treasure room, collect gold coins
+  [X]  Trap room, lose HP on entry
+  [ ]  Empty room, safe
+ 
+TIPS
+  ------
+  > All rooms are hidden until you physically step inside.
+  > The EXIT is always at the very last row and column.
+  > Collect as much gold as possible before reaching the exit.
+  > Red HP bar means danger, one more trap could kill you!
+  > Press [L] any time to view the leaderboard.
 
 
 ================================================================
